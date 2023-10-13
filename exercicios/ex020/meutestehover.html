@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando oq aprendi com hover</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(214, 186, 133);
+        }
+        div > a{
+            display: none;
+        }
+
+        div:hover > a {
+            display: block;
+            text-align: justify;
+            color: white;
+            background-color: aqua;
+            width: 110px;
+        }
+
+        div:hover{
+            color: rgb(239, 11, 204);
+        }
+        a:hover{
+            color: chartreuse;
+        }
+
+        a:visited{
+            color: chocolate;
+        }
+        a:active{
+            color: yellow;
+            background-color: black;
+        }
+        .qlqr{
+            background-color: blueviolet;
+            text-decoration: none;
+        }
+        .qlqr::after{
+            content: ' <---';
+            text-decoration: none;
+        }
+       
+        
+        a::before{
+            content: '---> ';
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando oq aprendi com o hover/pseudo element/class</h1>
+    <div>
+        Não passe o mouse aqui.
+        <a href="https://www.youtube.com/" target="_blank" rel="external"><img src="images.jpeg" width="100px" height="100px" alt="thumb-yt"> </a>
+    </div>
+    
+    <li><a href="https://www.instagram.com/" target="_blank">Insta</a></li>
+    <li><a href="https://www.twitch.tv/" target="_blank" class="qlqr">Twitch</a></li>
+</body>
+</html>
