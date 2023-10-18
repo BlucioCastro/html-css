@@ -50,10 +50,9 @@ header > p {
     font-weight: bold;
     font-family: 'Bebas Neue', sans-serif;
 }
-header nav{
-    margin: 0px;
-    padding: 10px;
+header nav{  
     background-color: rgba(0, 0, 0, 0.327);
+    
 }
 
 header > nav > a{
